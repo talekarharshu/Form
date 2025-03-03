@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <center>
+        <h1>Login Page</h1>
+    </center>
+    <form action="login.php" method="post">
+        <center>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+            <input type="submit" value="Login">
+        </center>
+    </form>
+    <center>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </center>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="97c1fb57-922d-4819-bf19-0d8ab3a4cb88">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+         <label for="Name">Enter Your Name: </label>
+        <input type="text" name="name" required><br>
+        <label for="Email">Enter Your Email: </label>
+        <input type="email" name="email" required><br>
+        <label for="Message">Enter Your Message: </label>
+        <textarea name="message" required></textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit">Submit Form</button>
+    
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <center>
+        <h1>Admission Form</h1>
+    </center>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="97c1fb57-922d-4819-bf19-0d8ab3a4cb88">
+        <label for="Name">Candidate Name : </label>
+        <input type="text" name="Candidate Name"><br><br>
+        <label for="Email">Enter Your Email: </label>
+        <input type="email" name="Email"><br><br>
+        <label for="Mobile">Enter Your Phone</label>
+        <input type="tel" name="Mobile"><br><br>
+        <label for="password">Enter Password : </label>
+        <input type="password" name="password"><br><br>
+        <label for="DOB">Enter Your DOB : </label>
+        <input type="date" name="Date of Birth"><br><br>
+        <label for="Qualification">Enter Your Qualification:</label>
+        <select name="Qualification" id="Degree">
+            <option value="Bsc-It">Bsc-It</option>
+            <option value="Bsc-CS">Bsc-CS</option>
+            <option value="BCA">BCA</option>
+          </select><br><br>
+          <label for="salary">Enter Your Salary: </label>
+          <input type="range" min="20000" max="100000"><br><br>
+        <label for="gender">Enter Your Gender : </label><br>
+        <input type="radio" name="Gender" id="Male">
+        <label for="Gender">Male</label><br>
+        <input type="radio" name="Gender" id="Female">
+        <label for="Gender">Female</label><br>
+        <input type="radio" name="Gender" id="Other">
+        <label for="Gender">Other</label><br><br>
+        <label for="Skills">Select Your Skills : </label><br>
+        <input type="checkbox" name="Skills" id="HTML">
+        <label for="Skills">HTML</label><br>
+        <input type="checkbox" name="Skills" id="CSS">
+        <label for="Skills">CSS</label><br>
+        <input type="checkbox" name="Skills" id="Javascript">
+        <label for="Skills">Javascript</label><br>
+        <input type="checkbox" name="Skills" id="Python">
+        <label for="Skills">Python</label><br>
+        <input type="checkbox" name="Skills" id="Java">
+        <label for="Skills">Java</label><br><br>
+
+        <label for="Resume">Upload Your Resume : </label>
+        <input type="file" accept=".pdf"><br><br>
+        <label for="Idproof"> Upload Any Identity card :</label>
+        <input type="file" accept=".pdf"><br><br>
+        <label for="Image">Upload Your Picture : </label>
+        <input type="file" accept=".jpg"><br><br>
+        <center>
+           <input type="submit" value="Submit">
+        </center>
+    </form>
+</body>
+</html>
